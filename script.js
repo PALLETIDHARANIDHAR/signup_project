@@ -191,3 +191,4 @@ button:hover { transform: translateY(-2px); }
     z-index: 3000;
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
