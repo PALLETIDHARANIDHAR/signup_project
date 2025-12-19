@@ -5,6 +5,7 @@
 <title>Authentication</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body class="dark-theme">
 
@@ -21,7 +22,7 @@
             <!-- Terms & Conditions checkbox -->
             <div class="terms" id="termsContainer">
                 <input type="checkbox" id="terms">
-                <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                <label for="terms">I agree to the <a href="terms.html" target="_blank" id="termsLink">Terms & Conditions</a></label>
             </div>
 
             <p class="error" id="error"></p>
@@ -31,9 +32,10 @@
         <div class="divider"><span>or continue with</span></div>
 
         <div class="social-buttons">
-            <button class="social google" id="googleBtn">
-                <i class="fa-brands fa-google"></i> Google
-            </button>
+            <!-- Google Sign-In -->
+            <div id="google-signin-button"></div>
+
+            <!-- Facebook -->
             <button class="social facebook">
                 <i class="fa-brands fa-facebook-f"></i> Facebook
             </button>
@@ -46,3 +48,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
