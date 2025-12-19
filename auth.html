@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Authentication</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+<div class="center-container">
+    <div class="auth-container">
+        <h2 id="formTitle"></h2>
+        <p class="quote">“Your data, protected with care.”</p>
+
+        <form id="authForm">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <!-- Terms & Conditions checkbox -->
+            <div class="terms" id="termsContainer">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+            </div>
+
+            <p class="error" id="error"></p>
+            <button type="submit" id="submitBtn"></button>
+        </form>
+
+        <div class="divider"><span>or continue with</span></div>
+
+        <div class="social-buttons">
+            <button class="social google" id="googleBtn">
+                <i class="fa-brands fa-google"></i> Google
+            </button>
+            <button class="social facebook">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+            </button>
+        </div>
+
+        <p class="toggle-text" id="toggleForm"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
